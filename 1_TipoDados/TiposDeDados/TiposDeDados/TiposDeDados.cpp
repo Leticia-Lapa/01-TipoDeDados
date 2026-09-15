@@ -146,22 +146,22 @@ int main()
 
 	long seg;
 	long seg_rest;
-	double min;
-	double hr;
-	double ds;
+	long min;
+	long hr;
+	long ds;
 
 	cout << "Digite o(s) segundo(s): ";
 	cin >> seg;
 
-	seg_rest = seg-((seg/60)*60);
-	min = seg /60.0;
-	hr = min / 60.0;
-	ds = hr / 24.0;
+	seg_rest = seg-((seg/60)*60); 
+	min = seg /60;
+	hr = min / 60;
+	ds = hr / 24;
 
-	cout << "\nSegundos restantes: " << seg_rest << endl;
-	cout << "\nMinutos:" << min << endl;
-	cout << "\nHoras:" << hr << endl;
 	cout << "\nDias:" << ds << endl;
+	cout << "\nHoras:" << hr << endl;
+	cout << "\nMinutos:" << min << endl;
+	cout << "\nSegundos restantes: " << seg_rest << endl;
 
 	system("pause");
 	system("cls");
