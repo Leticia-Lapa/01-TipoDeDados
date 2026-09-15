@@ -73,7 +73,7 @@ int main()
 
 	cout << endl << endl;
 
-	cout << "Qualquer tecla para continuar...";
+	cout << "\nQualquer tecla para continuar...";
 	system("pause"); // somente no Windows
 	system("cls");
 
@@ -96,20 +96,22 @@ int main()
 	cout << "Sua idade em horas e: " << horas << endl;
 	cout << "Sua idade em minutos e: " << minutos << endl;
 
-	cout << "Qualquer tecla para continuar...";
+	cout << "\nQualquer tecla para continuar...";
 	system("pause");
 	system("cls");
 
-	cout << "\nExercicio 1 — Exibir Tamanho Minimo e Maximo de Int e Short\n";
-	cout << "\n===========================================================\n";
+	cout << "\nExercicio 1 Limite de Dados\n";
+	cout << "===========================\n";
 
+	cout << "\nTamanho Minimo/Maximo de Int e Short\n";
+	cout << "====================================\n";
 	cout << "int  min = " << INT_MIN << "\n";
 	cout << "int  max = " << INT_MAX << "\n";
 	cout << "short min = " << SHRT_MIN << "\n";
 	cout << "short max = " << SHRT_MAX << "\n";
 
 	cout << "\nTamanho Minimo (-1)/Maximo(+1) de Int e Short\n";
-	cout << "===============================================\n";
+	cout << "=============================================\n";
 	cout << "int  min = " << INT_MIN - 1 << "\n";
 	cout << "int  max = " << INT_MAX + 1 << "\n";
 	cout << "short min = " << SHRT_MIN - 1 << "\n";
@@ -117,28 +119,30 @@ int main()
 
 	// o int máximo fica negativo, enquanto o int minimo fica positivo, short min e max apenas somam normal
 
-	cout << "\nExercicio 2 — Conversao de Temperatura\n";
-	cout << "\n======================================\n";
+	system("pause");
+	system("cls");
+
+	cout << "\nExercicio 2 Conversao de Temperatura\n";
+	cout << "====================================\n";
 
 	double t;
 	double fah;
 	double kel;
 
-	cout << "\nDigite uma temperatura:\n";
+	cout << "\nDigite uma temperatura: ";
 	cin >> t;
 
 	fah = t * 1.8 + 32;
 	kel = t + 273.15;
 
-	cout << "Temperatura convertida para Fahreheit: " << fah << endl;
-	cout << "Temperatura convertida para Kelvin:" << kel << endl;
+	cout << "\nTemperatura convertida para Fahreheit: " << fah << endl;
+	cout << "\nTemperatura convertida para Kelvin:" << kel << endl;
 
-	cout << "Qualquer tecla para continuar...";
 	system("pause");
 	system("cls");
 
-	cout << "\n Exercicio 3 - Calculadora de Segundos\n";
-	cout << "\n======================================\n";
+	cout << "\n Exercicio 3 Calculadora de Segundos\n";
+	cout << "====================================\n";
 
 	long seg;
 	long seg_rest;
@@ -146,10 +150,10 @@ int main()
 	double hr;
 	double ds;
 
-	cout << "Digite o(s) segundo(s):\n";
+	cout << "Digite o(s) segundo(s): ";
 	cin >> seg;
 
-	seg_rest = 60 - seg;
+	seg_rest = seg-((seg/60)*60);
 	min = seg /60.0;
 	hr = min / 60.0;
 	ds = hr / 24.0;
@@ -159,11 +163,23 @@ int main()
 	cout << "\nHoras:" << hr << endl;
 	cout << "\nDias:" << ds << endl;
 
-	cout << "Qualquer tecla para continuar...";
 	system("pause");
 	system("cls");
 
+	cout << "\n Exercicio 4 Ponteiro na Pratica\n";
+	cout << "================================\n";
 
+	int num = 10;
 
+	cout << "Valor da variavel: " << num << endl;
+	cout << "\nEndereço da variavel: " << &num << endl;
+	int* var = &num;
+
+	*var = num * 2;
+
+	cout << "\nValor da variavel em dobro: " << num << endl;
+
+	system("pause");
+	system("cls");
 }
 
