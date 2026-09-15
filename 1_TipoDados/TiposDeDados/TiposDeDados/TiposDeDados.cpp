@@ -1,12 +1,36 @@
 // TiposDeDados.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+// ------------COMANDOS---------------
+// 
+// cout -> exibe algo na tela
+// <</>> -> direção dos dados, separador/equivalente ao "+"
+//endl/\n -> mudar de linha
+// cin -> pedir entrada de dados, armazena valor
+//
+// 
+// ------------VARIAVEIS---------------
+// 
+// int ->inteiro
+// short -> inteiro curto
+// long  -> inteiro longo
+// float/double -> nº reais
+// char -> caracter
+// string -> conjunto de caracteres
+// 
+// ------------OPERADORES--------------
+// 
+// sizeof (tamanho de) -> operador que mostra o tamanho
+// string* -> ponteiro, local da memoria
+// &texto -> endereço fisico de memoria, indica onde o numero está na memoria
+// 
+// commit -> checkout
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	cout << "Estrutura de Dados - Fatec (2026/1)" << endl;
+	cout << "Estrutura de Dados - Fatec (2026/2)" << endl;
 
 	
 	cout << "Tipos Numericos\n";
